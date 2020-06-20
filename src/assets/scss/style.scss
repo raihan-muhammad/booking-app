@@ -42,3 +42,44 @@
 @import "spinners";
 @import "utilities";
 @import "print";
+
+.brand-text-icon {
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+  color: $primary;
+  font-weight: 500;
+  &:hover {
+    color: $primary;
+    text-decoration: none;
+  }
+}
+
+header {
+  border-bottom: 1px solid $gray-200;
+  width: 100%;
+  position: relative;
+
+  .navbar {
+    height: 80px;
+
+    .navbar-nav {
+      li.nav-item {
+        &.active {
+          a.nav-link {
+            color: $primary;
+          }
+        }
+        a {
+          &.nav-link {
+            color: $gray-900;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
