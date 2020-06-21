@@ -38,7 +38,7 @@ export default function Hero(props) {
         </div>
 
         <div className="col-6 pl-5">
-          <section style={{ width: 520, height: 410 }}>
+          <div style={{ width: 520, height: 410 }}>
             <img
               src={ImgHero}
               alt="Room with couches"
@@ -56,7 +56,7 @@ export default function Hero(props) {
               className="img-fluid position-absolute"
               style={{ margin: "0 -15px -15px 0" }}
             />
-          </section>
+          </div>
         </div>
       </div>
     </section>
