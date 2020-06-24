@@ -28,7 +28,7 @@ export default function MostPicked(props) {
                   <Button
                     type="link"
                     href={`/properties/${item._id}`}
-                    className="streched-link d-block text-white"
+                    className="stretched-link d-block text-white"
                   >
                     <h5>{item.name}</h5>
                   </Button>
