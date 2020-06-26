@@ -1,4 +1,4 @@
-import React, { Component, createRef } from "react";
+import React, { Component } from "react";
 
 import Header from "section/Header";
 import Hero from "section/Hero";
@@ -12,7 +12,11 @@ import Footer from "section/Footer";
 export default class LandingPage extends Component {
   constructor(props) {
     super(props);
-    this.refMostPicked = createRef();
+    this.refMostPicked = React.createRef();
+  }
+  componentDidMount() {
+    window.title = "Staycation | Home";
+    window.scrollTo(0, 0);
   }
   render() {
     return (

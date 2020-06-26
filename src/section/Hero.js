@@ -5,12 +5,12 @@ import ImgHeroFrame from "assets/images/frame.png";
 import Button from "elements/Button";
 
 export default function Hero(props) {
-  const showMostPicked = () => {
+  function showMostPicked() {
     window.scrollTo({
       top: props.refMostPicked.current.offsetTop - 30,
       behavior: "smooth",
     });
-  };
+  }
 
   return (
     <Fade right>
